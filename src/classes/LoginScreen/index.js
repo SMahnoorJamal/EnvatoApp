@@ -2,7 +2,7 @@
 import React from 'react';
 import {
   StyleSheet,
-  ScrollView
+  ScrollView,Text
 } from 'react-native';
 import { BoxL } from '../../components/BoxL';
 import BorderComp from '../../components/BorderComp';
@@ -11,6 +11,7 @@ function LoginScreen({navigation}) {
   return (
           <ScrollView  style={{backgroundColor: 'red'}}>
              <BoxL></BoxL>
+             <Text>Login</Text>
              <BorderComp navigation={navigation}/>
    
     </ScrollView>
