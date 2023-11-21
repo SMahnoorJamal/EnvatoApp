@@ -2,15 +2,15 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 // import { connect } from 'react-redux';
 // import { addPlace } from './src/actions/place';
-import { DetailsComp } from '../../components/DetailsComp';
+import DetailsComp  from '../../components/DetailsComp';
 import Carousal from '../../components/Carousal/index';
 
-const DetailsScreen = () => {
+function DetailsScreen( {navigation}) {
 
   return (
     <View>
       <Carousal />
-      <DetailsComp />
+      <DetailsComp navigation={navigation} />
     </View>
 
   );

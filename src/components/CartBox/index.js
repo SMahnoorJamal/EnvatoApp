@@ -4,7 +4,7 @@ import { ManInCoat1 } from '../../Images';
 import Button from '../Button';
 import Line from '../Line';
 import { styles } from './styles';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
  class CartBox extends Component {
     constructor(props) {
@@ -74,18 +74,18 @@ componentDidMount =() => {
             </ScrollView>   )
     }
 }
-
-const mapStateToProps = (state) => {
-    console.log("hggh", state.places)
-    return {
-      places: state.places
-    }
-  }
-  const mapDispatchToProps = (dispatch) => {
-    return {
-      add: (name) => {
-        dispatch(addPlace(name))
-      }
-    }
-  }
-  export default connect(mapStateToProps, mapDispatchToProps)(CartBox)
+export default CartBox;
+// const mapStateToProps = (state) => {
+//     console.log("hggh", state.places)
+//     return {
+//       places: state.places
+//     }
+//   }
+//   const mapDispatchToProps = (dispatch) => {
+//     return {
+//       add: (name) => {
+//         dispatch(addPlace(name))
+//       }
+//     }
+//   }
+//   export default connect(mapStateToProps, mapDispatchToProps)(CartBox)

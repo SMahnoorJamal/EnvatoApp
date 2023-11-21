@@ -30,7 +30,7 @@ const data1 =
             price: 3
         }
     ]
-function Cart() {
+function Cart( {navigation}) {
     return (
         <ScrollView style={{ backgroundColor: 'white' }}>
 
@@ -55,7 +55,7 @@ function Cart() {
               </View>
 
                 <View style={{ marginTop: 15, marginBottom: 18 }}>
-                    <Button text="Go to Shipping" />
+                    <Button text="Go to Shipping" onPress={() => {navigation.navigate('Shipping')}} />
                 </View>
 
             </View>

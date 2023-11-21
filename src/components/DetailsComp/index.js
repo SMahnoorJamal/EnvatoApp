@@ -12,9 +12,9 @@ import Input from '../Input';
 import Button from '../Button';
 import { CustomText } from '../CustomText';
 
-export class DetailsComp extends Component {
-  render() {
-    return (
+export default function DetailsComp ({ navigation}) {
+console.log("jiioji", navigation)
+  return(
 
       <View style={styles.container}>
 
@@ -108,17 +108,16 @@ style={{marginLeft: 45, marginBottom: 9}}>8</Text>
               </View>
 
 <View style={{ paddingRight: '1%'}}>
-<Button text="Add to Cart" style={styles.button}/>
+<Button 
+onPress={() => navigation.navigate('Cart')}
+text="Add to Cart" style={styles.button}/>
 </View>
             
         </View>
       </View>
-
-      
-
-    );
+  )
   }
-}
+
 
 
 const styles = StyleSheet.create({

@@ -11,9 +11,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import DetailsScreen from '../classes/DetailsScreen';
 import ShippingScreen from '../classes/ShippingScreen';
 import DetailsScreen from '../classes/DetailsScreen';
+import Cart from '../classes/Cart';
 
 const Stack = createNativeStackNavigator();
-const  App = () => {
+const App = () => {
 
   return (
 
@@ -22,14 +23,22 @@ const  App = () => {
         screenOptions={{
           headerShown: false,
         }}
-        >
+      >
         <Stack.Screen
           name="Login"
           component={LoginScreen} />
 
-         <Stack.Screen
+        <Stack.Screen
           name="Home"
-          component={ DetailsScreen} />
+          component={DetailsScreen} />
+
+        <Stack.Screen
+          name="Cart"
+          component={Cart} />
+
+        <Stack.Screen
+          name="Shipping"
+          component={ShippingScreen} />
       </Stack.Navigator>
 
     </NavigationContainer>
