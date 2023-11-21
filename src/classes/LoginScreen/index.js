@@ -9,9 +9,8 @@ import BorderComp from '../../components/BorderComp';
 
 function LoginScreen({navigation}) {
   return (
-          <ScrollView  style={{backgroundColor: 'red'}}>
+          <ScrollView>
              <BoxL></BoxL>
-             <Text>Login</Text>
              <BorderComp navigation={navigation}/>
    
     </ScrollView>

@@ -33,23 +33,30 @@ const data1 =
 function Cart( {navigation}) {
     return (
         <ScrollView style={{ backgroundColor: 'white' }}>
-
+            <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 40}}>
+                
+     <Text style={{fontStyle: 'Bold'}}>Cart</Text>
+            </View>
             {data1.map(item => {
                 return (
                 
                     <View>
+
+                   
                     <CartBox data={data1}></CartBox>
-                    <View style={{width: '100%', marginTop: 9, backgroundColor: 'grey', height: 1}}></View>   
+                    <View style={{width: '100%', marginTop: '-5%',
+                    marginBottom: '-15', backgroundColor: 'grey', height: 1}}></View>   
    
                     </View>
                 )
                 
             })}
 
-<View style={{width: '100%', backgroundColor: 'grey', height: 2}}></View>   
+{/* <View style={{width: '100%', backgroundColor: 'grey', height: 2}}></View>    */}
 
-            <View style={{ marginTop: 20,marginLeft: 38, width: '100%', justifyContent: 'center'}}>
-              <View style={{flexDirection: 'row',borderRadius: 15 , justifyContent: 'space-between', padding: 30, width: '83%', backgroundColor: '#F4F4F4'}}>
+            <View style={{ marginTop: 20,marginLeft: 29, width: '100%', justifyContent: 'center'}}>
+              <View style={{flexDirection: 'row',borderRadius: 42 , justifyContent: 'space-between', 
+              padding: 20, width: '83%', backgroundColor: '#F4F4F4'}}>
                 <Text>Total Price</Text>
                 <Text>68,148 NGN</Text>
               </View>

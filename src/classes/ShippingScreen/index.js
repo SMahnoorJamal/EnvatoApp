@@ -24,7 +24,7 @@ function ShippingScreen() {
                 <View style={{
                     flexDirection: 'row',
                     // marginTop: '12%',
-                    // marginLeft: 10
+                    marginLeft: -17
                 }}>
                     <Input
                         inputContainer={{ backgroundColor: '#F4F4F4' }}

@@ -5,14 +5,15 @@ export  const styles = StyleSheet.create( {
 
     container: {
          flexDirection: 'row',
-         marginLeft: '-31%',
-        marginTop: 90,
+         marginLeft: '-10%',
+        marginTop: 30,
+        width: '60%',
         justifyContent: 'space-between',
-        // backgroundColor: 'red'
+        // backgroundColor: 'red' 
     },
     imageStyle: {
-        padding: '20%',
-        width: '30%', height: '20%', resizeMode: 'contain'
+         padding: 70,
+        width: '29%', height: '15%', resizeMode: 'contain'
     },
     textStyle: 
     { color: 'white', fontSize: 19 }

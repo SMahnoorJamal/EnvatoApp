@@ -60,21 +60,30 @@ function BorderComp({navigation}) {
           />
 
           <View style={{ marginTop: '18%' }}>
-            <Button text="Log" onPress={()=> navigation.navigate('Home')} />
+            <Button  style={{ width: '100%', height: '43%', alignItems: 'center',
+          borderRadius: 50,   
+             justifyContent: 'center', backgroundColor: 'gray'}} text="Log In" onPress={()=> navigation.navigate('Home')} />
+        <View style={{ padding: '30%',  marginTop: -150,
+          alignItems: 'center' }}>
+
+                 {/* <CustomText style={{marginTop: -101, padding: '70%', backgroundColor: 'green'}}
+                touchable="true"
+                text="Don't have an account? Register" /> */}
+
+                <View style={{flexDirection: 'row', marginTop: 15}}>
+<Text>Don't have an </Text> 
+ <Text> Register</Text>
+                </View>
+              {/* <CustomText
+                touchable="true"
+                text="Register" /> */}
+          </View>
+
+       
           </View>
 
 
-          <View style={{ marginTop: '20%', alignItems: 'center' }}>
-
-                 <CustomText
-                touchable="true"
-                text="Don't have an account?" />
-
-              <CustomText
-                touchable="true"
-                text="Register" />
-          </View>
-
+         
         </View>
       </View>
 

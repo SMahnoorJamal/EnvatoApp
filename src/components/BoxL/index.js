@@ -12,7 +12,7 @@ export class BoxL extends Component {
            style={{height: '26%',
            marginTop: 0, width: '25%',
            alignSelf: 'center', resizeMode:'contain'}}
-           source ={require('../../Images/Photo3.png')}>
+           source ={require('../../Images/Photo5.png')}>
            </Image>
         //  </View>
     )
