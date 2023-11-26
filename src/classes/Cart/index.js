@@ -11,6 +11,8 @@ import { BorderComp } from '../../components/BorderComp';
 import CartBox from '../../components/CartBox';
 import { ManInCoat1, Photo3 } from '../../Images';
 import Button from '../../components/Button';
+import Header from '../../components/Header';
+
 const data1 =
     [
         {
@@ -33,9 +35,10 @@ const data1 =
 function Cart( {navigation}) {
     return (
         <ScrollView style={{ backgroundColor: 'white' }}>
-            <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 40}}>
-                
-     <Text style={{fontStyle: 'Bold'}}>Cart</Text>
+            <View style={{alignItems: 'center', 
+            justifyContent: 'center', marginTop: 20, marginBottom: 7}}>
+            <Header  title ="Cart" backButton ={true}/>
+     {/* <Text style={{fontStyle: 'Bold'}}>Cart</Text> */}
             </View>
             {data1.map(item => {
                 return (

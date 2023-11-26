@@ -12,7 +12,7 @@ export  const styles = StyleSheet.create( {
         // backgroundColor: 'red' 
     },
     imageStyle: {
-         padding: 70,
+         padding: 70, marginLeft: 20,
         width: '29%', height: '15%', resizeMode: 'contain'
     },
     textStyle: 

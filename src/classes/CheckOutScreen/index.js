@@ -41,7 +41,7 @@ class CheckOutScreen extends Component {
 
 }}>Payment</Text>
 
-<Button/>
+<Button onPress={() => {this.props.navigation.navigate('HomePage')}}/>
 <ButtonIcon/>
             </ScrollView>
         )

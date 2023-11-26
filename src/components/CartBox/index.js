@@ -39,7 +39,7 @@ class CartBox extends Component {
                         </View>
 
 
-                        <View style={{
+                        <View style={{marginLeft: -25,
                             marginTop: 39, padding: 20, height: '60%'}}>
 
 

@@ -15,7 +15,10 @@ const Input = (props) => {
                 secureTextEntry={props.secureTextEntry ? props.secureTextEntry : false}
                 multiline={props.multiline ? props.multiline : false}
                 style={props.inputContainer ? props.inputContainer : styles.input}
-                placeholder={props.placeholder ? props.placeholder : "Email"} >
+                placeholder={props.placeholder ? props.placeholder : "Email"} 
+                placeholderStyle={{color: 'red'}}
+                // placeholderTextColor={'red'}
+                >
             </TextInput>
 
             {props.iconText ?

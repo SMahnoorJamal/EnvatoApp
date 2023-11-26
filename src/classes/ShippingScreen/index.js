@@ -7,11 +7,11 @@ import Button from "../../components/Button";
 import Line from "../../components/Line";
 import Header from "../../components/Header";
 
-function ShippingScreen() {
+function ShippingScreen({navigation}) {
 
     return (
         <ScrollView style={{
-            flex: 1,
+            flex: 1, backgroundColor: 'white'
         }}>
             <View style={{
 
@@ -19,10 +19,12 @@ function ShippingScreen() {
                 // backgroundColor: 'lightgreen'
             }}>
                 <Header title="Shipping" backButton={true}></Header>
-                <Text style={{ marginTop: '10%' }}>Shipping Address</Text>
+                <Text style={{ marginTop: '10%', marginLeft: -17,
+                fontSize: 17, fontWeight: 'bold' }}>Shipping Address</Text>
 
                 <View style={{
                     flexDirection: 'row',
+                    marginTop: 10,
                     // marginTop: '12%',
                     marginLeft: -17
                 }}>
@@ -40,8 +42,9 @@ function ShippingScreen() {
                             marginTop: 10
                         }}
                         placeholder="First Name"></Input>
-                    <Input
-                        inputContainer={{ backgroundColor: '#F4F4F4' }}
+                        <View style>
+                        <Input
+                        inputContainer={{ marginLeft: 19 }}
                         style={{
                             flexDirection: 'row',
                             alignItems: 'center',
@@ -50,27 +53,32 @@ function ShippingScreen() {
                             borderColor: '#C4C4C4',
                             height: 56,
                             backgroundColor: '#F4F4F4',
-                            width: '45%',
+                            width: '91%',
                             marginTop: 10,
-                            marginLeft: 25
-                        }} />
+                            marginLeft: 20
+                        }}
+                        placeholder="Last Name"></Input>
+                        </View>
+                  
 
                 </View>
 
 
                 <Input
-                    inputContainer={{ backgroundColor: '#F4F4F4' }}
+                    inputContainer={{ backgroundColor: '#F4F4F4', marginLeft: 19 }}
                     style={{
                         justifyContent: 'center',
                         borderRadius: 8,
                         borderWidth: 2,
                         borderColor: '#C4C4C4',
                         height: 56,
-                        backgroundColor: '#F4F4F4',
-                        width: '97.5%',
+                        //backgroundColor: 'red',
+                         backgroundColor: '#F4F4F4',
+                        width: '105%',
                         marginTop: 17,
-                        // marginLeft: 1
-                    }} />
+                        marginLeft: -17
+                    }}
+                    placeholder="Adress" />
 
 
 
@@ -78,6 +86,7 @@ function ShippingScreen() {
                 <View style={{
                     flexDirection: 'row',
                     marginTop: '3%',
+                    marginLeft: -17
                     // marginLeft: 10
                 }}>
                     <Input
@@ -93,9 +102,9 @@ function ShippingScreen() {
                             width: '45%',
                             marginTop: 10
                         }}
-                        placeholder="First Name"></Input>
+                        placeholder="Town/City"></Input>
                     <Input
-                        inputContainer={{ backgroundColor: '#F4F4F4' }}
+                        inputContainer={{ backgroundColor: '#F4F4F4', marginLeft: 19 }}
                         style={{
                             flexDirection: 'row',
                             alignItems: 'center',
@@ -107,30 +116,42 @@ function ShippingScreen() {
                             width: '45%',
                             marginTop: 10,
                             marginLeft: 25
-                        }} />
+                        }}
+                        placeholder= "Zip Code" />
 
                 </View>
 
-                <Line style={{ backgroundColor: 'grey', height: 1, width: '100%', marginTop: 45 }} />
+                <Line style={{ backgroundColor: 'grey', height: 1, width: '105%', marginTop: 40,
+            marginLeft: -17 }} />
 
 
                 <View>
 
-                    <Text style={{ marginTop: 30 }}>Shipping Options</Text>
+                    <Text style={{ marginTop: 30,
+                        marginBottom: 27, marginLeft: -17, fontSize: 17, fontWeight: 'bold' }}>Shipping Options</Text>
 
-                    {/* <View style={{ marginLeft: '10%', marginTop: 20 }}>
+
+                    <CustomCheckBox  title="Standard 5 to 7 working days"></CustomCheckBox>
+                   <View style={{marginTop: 10,}}>
+                   <CustomCheckBox title=" Express 2 to 3 days"></CustomCheckBox>
+                
+                   </View>
+                 {/* <View style={{ marginLeft: '10%', marginTop: 20 }}>
                         <CustomCheckBox title="Standard 5 to 7 days" />
                         <CustomCheckBox title="Express 5 to 7 days" />
                     </View> */}
                     <Button style={{
                         alignItems: "center",
                         backgroundColor: "#989494",
-                        marginTop: 26,
+                        marginTop: 66,
                         borderRadius: 10,
                         height: 56,
-                        width: '100%',
+                        width: '105%',
+                        marginLeft: -17,
                         justifyContent: 'center',
-                    }} text="Check Out" />
+                    }} text="Check Out" 
+                    
+                    onPress={()=> {navigation.navigate('HomePage')}}/>
                 </View>
             </View>
         </ScrollView>

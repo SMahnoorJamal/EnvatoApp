@@ -10,7 +10,7 @@ import BorderComp from '../../components/BorderComp';
 function LoginScreen({navigation}) {
   return (
           <ScrollView>
-             <BoxL></BoxL>
+             <BoxL ></BoxL>
              <BorderComp navigation={navigation}/>
    
     </ScrollView>

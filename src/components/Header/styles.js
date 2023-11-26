@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
     },
     header1: {
         height: 40,
-        width: '64%',
-        left: 19,
+        width: '74%',
+        left: -10,
         right: 19,
         // backgroundColor:'red',
         justifyContent: 'space-between',
