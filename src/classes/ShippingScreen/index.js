@@ -25,6 +25,7 @@ function ShippingScreen({navigation}) {
                 <View style={{
                     flexDirection: 'row',
                     marginTop: 10,
+                    width: '105%',
                     // marginTop: '12%',
                     marginLeft: -17
                 }}>

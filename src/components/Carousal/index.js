@@ -2,11 +2,12 @@ import Carousel, {Pagination} from 'react-native-banner-carousel';
 import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import React, { Component } from 'react';
 import { ManInCoat1 } from '../../Images/index';
-//   
+import { Photo3 } from '../../Images/index';
+
 
 const images = [
   ManInCoat1,
-  ManInCoat1,
+  Photo3,
   ManInCoat1
 ];
 
@@ -70,6 +71,7 @@ const styles = StyleSheet.create({
     // marginBottom: Platform.select({ ios: 0, android: 1 }), // Prevent a random Android rendering issue
     backgroundColor: 'white',
     borderRadius: 8,
+    width: '100%',
     resizeMode: 'contain'
   },
   image: {

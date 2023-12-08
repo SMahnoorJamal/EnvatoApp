@@ -23,28 +23,30 @@ class CartBox extends Component {
         console.log("hgh", this.props.places, this.props)
         return (
 
-            <ScrollView>
+            <ScrollView style={{flex: 1}}>
 
-                <View style={{justifyContent: 'center' ,
-                width: '40%', flexDirection: 'row', marginTop: '-5%', }}>
+                <View style={{justifyContent: 'center',
+                width: '100%', flexDirection: 'row', marginTop: '-5%', }}>
 {/* 
                     <View style={{ justifyContent: 'center' }}> */}
 
-                        <View style={{ padding: 30,  marginLeft: 143 }}>
+                        <View style={{ padding: 30, width: '50%', marginLeft: '20%', }}>
                             {/* {this.state.data ? this.state.data.map(item => {
                              return( */}
-                            <Image style={styles.imageStyle} source={Photo4}>
+                            <Image style={styles.imageStyle} source={this.props.data.image}>
                             </Image>
 
                         </View>
 
 
-                        <View style={{marginLeft: -25,
+                        <View style={{marginLeft: 10,
                             marginTop: 39, padding: 20, height: '60%'}}>
 
 
                             <Text>Coronam</Text>
-                            <Text>30,050 NGN</Text>
+                            {/* <Text>30,050 NGN</Text> */}
+                            <Text>{this.props.data.price}</Text>
+
 
                             <View style={styles.container}>
 
@@ -72,6 +74,8 @@ class CartBox extends Component {
 
 
 </View>
+
+<View style={{backgroundColor: 'grey', marginLeft: -190, height: 1, marginTop: 26, width: '160%'}}></View>
                         </View>
 
                         {/* <View>

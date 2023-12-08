@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
         padding: 4,
         left: '8%',
         right: '17%',
-        height: 46,
-    // backgroundColor:'orange',
+        height: 40,
+    //backgroundColor:'orange',
         backgroundColor:'#F6F6F6',
     },
     input: {
@@ -34,7 +34,14 @@ export const styles = StyleSheet.create({
         // marginLeft: '42%',
         color: '#000000',
         resizeMode: 'contain',
-        height: '50%',
-        width: '40%'
+        height: '40%',
+        width: '40%',
+    },
+    iconStyle: {
+        color: '#000000',
+        resizeMode: 'contain',
+        height: '40%',
+        width: '30%',
+alignSelf: 'flex-end'
     }
 });

@@ -12,11 +12,33 @@ import Input from '../Input';
 import Button from '../Button';
 import { CustomText } from '../CustomText';
 
-export default function DetailsComp ({ navigation}) {
-console.log("jiioji", navigation)
+export default class DetailsComp extends Component {
+
+  constructor(props) {
+    super();
+    this.state ={
+      count : 0
+    }  
+  }
+
+increment =( ) => {
+
+  this.setState({count: this.state.count +1})
+  return (
+  this.state.count)
+}
+
+decrement =( ) => {
+
+  // this.setState({count: this.state.count -1})
+
+  // if(this.state.count == 0)  {
+  // return (0) }
+}
+  render() {
   return(
 
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
 
         <Text
           numberOfLines={1}
@@ -35,10 +57,10 @@ console.log("jiioji", navigation)
 
 <View style={{marginTop: '7%',
  marginLeft: '1%',}}>
-<Button textStyle={{color: 'gray'}} text="+" style={styles.button1}/>
+<Button onPress ={() => {this.increment()}} textStyle={{color: 'gray'}} text="+" style={styles.button1}/>
 <Text 
-style={{marginLeft: 45, marginBottom: 9}}>8</Text>
-<Button textStyle={{color: 'gray'}} text="-" style={styles.button2}/>
+style={{marginLeft: 45, marginBottom: 9}}>{this.state.count}</Text>
+<Button onPress ={this.decrement} textStyle={{color: 'gray'}} text="-" style={styles.button2}/>
 </View>
 
 </View>
@@ -93,11 +115,11 @@ style={{marginLeft: 45, marginBottom: 9}}>8</Text>
 
 
           <View style={{
-            marginTop: '9%',
-            width: '40%',
+            marginTop: '14%',
+            width: '70%',
             flexDirection: 'row',
             justifyContent: 'space-between',
-            marginLeft: '2%',
+            marginLeft: '4%',
             marginBottom: 60,
             // marginLeft: '1%'
           }}>
@@ -107,15 +129,16 @@ style={{marginLeft: 45, marginBottom: 9}}>8</Text>
               </Text>
               </View>
 
-<View style={{ paddingRight: '1%'}}>
+<View style={{ paddingRight: '0%'}}>
 <Button 
-onPress={() => navigation.navigate('Cart')}
+onPress={() => this.props.navigation.navigate('Cart')}
 text="Add to Cart" style={styles.button}/>
 </View>
             
         </View>
-      </View>
+      </ScrollView>
   )
+        }
   }
 
 
@@ -124,13 +147,13 @@ const styles = StyleSheet.create({
 
   container:
   {
-    marginTop: '-10%',
+    marginTop: '-14%',
     borderRadius: 50,
     borderColor: '#c0c0c0',
     borderWidth: 2,
-    height: '80%',
+    height: '120%',
     width: '100%',
-    marginBottom: '100%',
+    marginBottom: '10%',
     backgroundColor: 'white'
   },
   Text:
@@ -166,7 +189,7 @@ const styles = StyleSheet.create({
     // padding: 20,
     marginTop: 8,
     borderRadius: 10,
-    marginLeft: 30,
+    marginLeft: 24,
     height: 56,
     width: '140%',
     justifyContent: 'center',

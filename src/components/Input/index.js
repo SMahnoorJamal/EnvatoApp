@@ -10,6 +10,10 @@ const Input = (props) => {
 
         <View style={props.style ? props.style : styles.container}>
 
+
+{props.icon1 ?   <TouchableOpacity style={{ width: '95%', backgroundColor: ' red', marginTop: -31 }}>
+                        <Image source={require('../../Images/Search.png')} style={styles.iconStyle} />
+                    </TouchableOpacity> : null}
             <TextInput
                 {...props}
                 secureTextEntry={props.secureTextEntry ? props.secureTextEntry : false}
@@ -27,8 +31,8 @@ const Input = (props) => {
                     <Text style={styles.textStyle}>{props.iconText}</Text>
                 </TouchableOpacity> :
                 props.icon ?
-                    <TouchableOpacity style={{ width: '15%', backgroundColor: ' red' }}>
-                        {/* <Image source={require('../ /Photo3.png')} style={styles.textStyle} /> */}
+                    <TouchableOpacity style={{ width: '95%', backgroundColor: ' red', marginTop: -31 }}>
+                        <Image source={require('../../Images/Search.png')} style={styles.iconStyle} />
                     </TouchableOpacity>
 
                     :

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 // import { connect } from 'react-redux';
 // import { addPlace } from './src/actions/place';
 import DetailsComp  from '../../components/DetailsComp';
@@ -8,10 +8,10 @@ import Carousal from '../../components/Carousal/index';
 function DetailsScreen( {navigation}) {
 
   return (
-    <View>
+    <ScrollView style={{marginBottom: -90}}>
       <Carousal />
       <DetailsComp navigation={navigation} />
-    </View>
+    </ScrollView>
 
   );
 }

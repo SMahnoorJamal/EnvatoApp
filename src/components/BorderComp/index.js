@@ -80,7 +80,7 @@ function BorderComp({ navigation }) {
                 <Text style={{ width: '130%' }}>Don't have an account?</Text>
               </View>
             </View>
-            <TouchableOpacity onPress={navigation.navigate('Home')}>
+            <TouchableOpacity onPress={navigation.navigate('Register')}>
               <Text style={{ width: '150%' }}>Register</Text>
             </TouchableOpacity>
           </View>

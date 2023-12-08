@@ -15,9 +15,9 @@ export const styles = StyleSheet.create({
     },
     header1: {
         height: 40,
-        width: '74%',
-        left: -10,
-        right: 19,
+        width: '54%',
+        left: 24,
+        // right: 19,
         // backgroundColor:'red',
         justifyContent: 'space-between',
         flexDirection: 'row',
@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
         fontSize: 30,
         color: '#000000',
         fontStyle: 'normal',
+
 
     }
 

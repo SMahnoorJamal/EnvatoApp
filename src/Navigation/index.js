@@ -22,22 +22,23 @@ const App = () => {
 
     <NavigationContainer>
       <Stack.Navigator
+      initialRouteName='LoginScreen'
         screenOptions={{
           headerShown: false,
         }}
       >
        <Stack.Screen
-          name="Login"
+          name="LoginSceen"
           component={LoginScreen} />
-
-<Stack.Screen
-          name="Register"
-          component={RegisterScreen} 
-          />
-           
-        <Stack.Screen
+  <Stack.Screen
           name="Home"
           component={DetailsScreen} />
+{/* <Stack.Screen
+          name="Register"
+          component={RegisterScreen} 
+          /> */}
+           
+      
 
         <Stack.Screen
           name="Cart"

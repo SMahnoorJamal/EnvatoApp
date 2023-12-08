@@ -15,7 +15,7 @@ class Header extends Component {
 
                 <View style={styles.header1}>
 
-                    <TouchableOpacity onPress={this.props.onPress}>
+                    <TouchableOpacity style onPress={this.props.onPress}>
                         <Image style={{color:'#000000', fontSize: 15}}
                         source={require('../../Images/Photo6.png')}
                         ></Image>
