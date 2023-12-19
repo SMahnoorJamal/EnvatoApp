@@ -20,11 +20,17 @@ class HomePage extends React.Component {
 super(); 
     this.state ={
 data: [
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png'),
+    require('../..//Images/WebDress.png')
 
-    { key: 'Android' }, { key: 'iOS' }, { key: 'Java' }, { key: 'Swift' },
-    { key: 'Php' }, { key: 'Hadoop' }, { key: 'Sap' },
-    { key: 'Python' }, { key: 'Ajax' }, { key: 'C++' },
-    { key: 'Ruby' } ]
+ ]
     }
 
     }
@@ -123,36 +129,31 @@ data: [
                 </View>
                 <View>
 
-                </View>
+                </View>   
 
-
-
-                <View style={{ marginTop: 25,display: 'flex', flex: 2, flexWrap: 'wrap',
-                 width: 310, height: 400, }}>
-
-                    {this.state.data.map(item => {
-
-                        return(
-                           <ImageBackground 
-                           source={require('../..//Images/WebDress.png')}
-                        style={{ height: 120, marginLeft: -27,  marginBottom: 20, width: '70%', borderRadius: 10,}}>
-                        <View style={{
-                            justifyContent: 'center',
-                            marginTop: 90, alignItems: 'center'
-                        }}>
-                            <Text style={{ color: 'white' }}>Hand-Made</Text>
-                            <Text style={{ color: 'white' }}> For You</Text>
-                        </View>
-
-
-                    </ImageBackground>)
-                    })}
-                </View>
+<View style={styles.container2}>
+      <View style={styles.row}>
+        {this.state.data.map((image, index) => (
+          <View style={styles.imageContainer}>
+            <ImageBackground source={image} style={styles.image} >
+             <View style={{
+                justifyContent: 'center',
+                marginTop: 50, alignItems: 'center'
+            }}>
+                <Text style={{ color: 'white' }}>Hand-Made</Text>
+                <Text style={{ color: 'white' }}> For You</Text>
+            </View>
+            </ImageBackground>
+          </View>
+        ))}
+      </View>
+    </View>
             </View>
 
         </ScrollView>
     )
 }
 }
+
 
 export default HomePage;

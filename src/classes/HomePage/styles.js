@@ -43,5 +43,31 @@ export const styles = StyleSheet.create({
         // backgroundColor: 'green',
         width: '100%',
 // alignSelf: 'flex-end'
-    }
+    },
+    container2: {
+        //   flex: 1,
+        // width: '90%',
+        marginTop: '9%',
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
+        row: {
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+          width: '100%', // Adjust as needed
+        
+        },
+        imageContainer: {
+          width: '48%', // Adjust the width to have two columns
+          height: 100,
+          marginVertical: 5,
+        },
+        image: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+          resizeMode: 'cover',
+        },
+
 });
