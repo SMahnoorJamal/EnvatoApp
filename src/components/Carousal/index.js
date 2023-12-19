@@ -3,12 +3,12 @@ import { Dimensions, StyleSheet, View, Text, Image } from 'react-native';
 import React, { Component } from 'react';
 import { ManInCoat1 } from '../../Images/index';
 import { Photo3 } from '../../Images/index';
-
+import { Photo4 } from '../../Images/index';
 
 const images = [
   ManInCoat1,
   Photo3,
-  ManInCoat1
+  Photo4
 ];
 
 const { width: screenWidth } = Dimensions.get('window')
