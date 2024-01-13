@@ -10,8 +10,7 @@ const Stack = createNativeStackNavigator();
 function App ()  {
 
   return (
-<ProductListingFnc>
-</ProductListingFnc>
+<Navigation></Navigation>
   )
 };
 export default App;
