@@ -6,6 +6,7 @@ import CustomCheckBox from "../../components/CustomCheckBox";
 import Button from "../../components/Button";
 import Line from "../../components/Line";
 import Header from "../../components/Header";
+import styles from "./styles";
 
 function ShippingScreen({navigation}) {
 
@@ -13,12 +14,16 @@ function ShippingScreen({navigation}) {
         <ScrollView style={{
             flex: 1, backgroundColor: 'white'
         }}>
+              <Header 
+              headerText={styles.headerText}
+              title="Shipping" backButton={true}></Header>
             <View style={{
 
                 width: '79%', marginLeft: 50, justifyContent: 'center',
                 // backgroundColor: 'lightgreen'
             }}>
-                <Header title="Shipping" backButton={true}></Header>
+                {/* <Header title="Shipping" backButton={true}></Header> */}
+                
                 <Text style={{ marginTop: '10%', marginLeft: -17,
                 fontSize: 17, fontWeight: 'bold' }}>Shipping Address</Text>
 

@@ -13,8 +13,10 @@ import Input from '../Input';
 import Button from '../Button';
 import { CustomText } from '../CustomText';
 import ShippingScreen from '../../classes/ShippingScreen';
+import { useNavigation } from '@react-navigation/native';
 
-function BorderComp({ navigation }) {
+function BorderComp({  }) {
+ const navigation = useNavigation();
   console.log("sjshjs", navigation)
   return (
 
@@ -61,7 +63,7 @@ function BorderComp({ navigation }) {
           }}
         />
 
-        <View style={{ marginTop: '18%' }}>
+        <View style={{ marginTop: '10%' }}>
 
           <Button style={{
             width: '100%', height: '43%', alignItems: 'center',
@@ -80,7 +82,8 @@ function BorderComp({ navigation }) {
                 <Text style={{ width: '130%' }}>Don't have an account?</Text>
               </View>
             </View>
-            <TouchableOpacity onPress={navigation.navigate('Register')}>
+            {/* <CustomText onPress={navigation.navigate('Cart')} touchable={true}/> */}
+            <TouchableOpacity onPress={()=> navigation.navigate('Register')}>
               <Text style={{ width: '150%' }}>Register</Text>
             </TouchableOpacity>
           </View>
@@ -100,7 +103,7 @@ const styles = StyleSheet.create({
 
   container:
   {
-    marginTop: '10%',
+    // marginTop: '10%',
     borderRadius: 50,
     borderColor: '#c0c0c0',
     borderWidth: 2,

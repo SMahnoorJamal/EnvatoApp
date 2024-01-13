@@ -9,7 +9,7 @@ export const CustomText = (props) => {
     return (
         <View>
         {props.touchable ?
-            <TouchableOpacity>
+            <TouchableOpacity onPress={props.onPress}>
             <Text style={styles.textColor}>{props.text ?
                 props.text : "Forgot your password?"}</Text>
             </TouchableOpacity>

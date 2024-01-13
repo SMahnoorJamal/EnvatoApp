@@ -13,6 +13,9 @@ export const styles = StyleSheet.create({
         // backgroundColor: "red",
         justifyContent: 'center'
     },
+    imageStyle:{   color:'#000000', 
+                        width:20,height: 20,fontSize: 15
+    },
     header1: {
         height: 40,
         width: '54%',

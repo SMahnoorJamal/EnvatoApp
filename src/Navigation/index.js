@@ -33,10 +33,10 @@ const App = () => {
   <Stack.Screen
           name="Home"
           component={DetailsScreen} />
-{/* <Stack.Screen
+<Stack.Screen
           name="Register"
           component={RegisterScreen} 
-          /> */}
+          />
            
       
 
